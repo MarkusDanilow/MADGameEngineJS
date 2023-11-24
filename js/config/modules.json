@@ -1,0 +1,17 @@
+{
+    "modules":{
+        "engine": [
+            "Math",
+            "Renderer",
+            "GameBase",
+            "GameObject"
+        ],
+        "game": [
+            "Game",
+            "Entity",
+            "Player",
+            "World",
+            "util/Constants"
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+$backgroundColor: #202d35;
+$clearColor: #000;
+
+body{
+    background: $clearColor;
+}
+
+.gameCanvas{
+    background: $clearColor;
+    border: 1px dashed $backgroundColor;
+}

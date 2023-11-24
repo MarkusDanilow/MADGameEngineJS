@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Leave - Game</title>
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+    <script src="js/engine/Engine.js"></script>
+
+</head>
+<body>
+    
+    <canvas class="gameCanvas" id="gameCanvas"></canvas>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            Engine.Create("gameCanvas", () => {
+                
+                const engine = Engine.GetInstance(); 
+                var game = new DontLeaveGame(); 
+                engine.injectGame(game); 
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>
